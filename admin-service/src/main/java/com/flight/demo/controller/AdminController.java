@@ -19,6 +19,7 @@ public class AdminController {
 	@Autowired
 	AdminService adminService;
 	
+	//returns get user of flight
 	@GetMapping
 	Iterable<Flight> getUser() {
 		return adminService.getAllFlights();
